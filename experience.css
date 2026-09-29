@@ -1,13 +1,13 @@
 :root{--ease-out:cubic-bezier(.23,1,.32,1)}
 .hero:after{content:"";position:absolute;bottom:0;left:0;right:0;height:18%;background:linear-gradient(transparent,#081526);pointer-events:none}
-.knowledge-section{background:radial-gradient(ellipse at 20% 0%,#233b43,transparent 60%),linear-gradient(#081526,#101b30);padding-top:32px;padding-bottom:52px}
+.knowledge-section{background:radial-gradient(ellipse at 20% 0%,#233b43,transparent 60%),linear-gradient(#081526,#101b30);padding-top:40px;padding-bottom:60px}
 .knowledge-frame{border:1px solid #ffffff12;box-shadow:0 28px 65px #0005}
 .hero__title,.brand-name{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.035em;font-variant:small-caps}
 .hero__title-line{position:relative}
 .hero__title-line:after{content:"";display:block;height:5px;width:65%;margin-top:14px;background:repeating-linear-gradient(135deg,transparent 0 9px,#dfad64 9px 12px,transparent 12px 18px);opacity:.75}
 .knowledge-carousel{overflow:hidden;touch-action:pan-y;scroll-behavior:auto;scroll-snap-type:none;position:relative}
 .river-track{display:flex;gap:10px;width:max-content;will-change:transform}
-.river-track .knowledge-card{flex:0 0 clamp(175px,18vw,228px);backdrop-filter:none;transform:none!important}
+.river-track .knowledge-card{flex:0 0 clamp(155px,14.5vw,205px);backdrop-filter:none;transform:none!important}
 .knowledge-heading-row{gap:10px}.river-pause{background:transparent;border:1px solid #ffffff40;color:#f4dbb9;border-radius:20px;padding:6px 10px;font-size:10px;cursor:pointer}
 #programas{background:radial-gradient(ellipse at 50% 45%,#233d42,#101b30 64%,#091321);overflow:hidden;position:relative;color:#fff;padding:65px 0;scroll-margin-top:80px}
 #programas .section-header{max-width:none;text-align:center;margin-bottom:14px}
@@ -57,21 +57,21 @@
 @media(max-width:700px){#director{padding:45px 0}#director .rector-panel{min-height:840px}#director .rector-intro{width:100%;padding:32px 24px 0}#director h2{font-size:43px}#director .rector-subtitle{font-size:22px}#director .rector-cutout{height:440px;width:110%;right:-5%}#director .rector-note{bottom:16px;right:16px;width:215px;padding:15px}#director .rector-details{grid-template-columns:1fr;gap:22px}#director .director-quote p{font-size:19px}}
 /* Larger photographic routes: automatic flow, ordinary cursor and click selection. */
 #sobre .knowledge-frame{min-height:820px}
-#sobre .knowledge-carousel-wrap{width:min(60%,850px)}
+#sobre .knowledge-carousel-wrap{width:min(56%,800px)}
 #sobre .knowledge-carousel,#sobre .river-track,#sobre .knowledge-card{cursor:default;touch-action:pan-y}
 #sobre .river-track{gap:14px}
-#sobre .river-track .knowledge-card{flex-basis:clamp(260px,24vw,330px);height:205px;min-height:205px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;background:#08162d;backdrop-filter:none;border-radius:17px;transition:border-color 180ms ease}
+#sobre .river-track .knowledge-card{flex-basis:clamp(220px,18vw,285px);height:180px;min-height:180px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;background:#08162d;backdrop-filter:none;border-radius:17px;transition:border-color 180ms ease}
 #sobre .knowledge-card__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none}
 #sobre .knowledge-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#030c25f5 0%,#08162d88 50%,#07182f15 100%);pointer-events:none}
 #sobre .knowledge-card.is-active{border:2px solid #ffbf69;background:#08162d}
 #sobre .knowledge-card.is-active:after{background:linear-gradient(0deg,#421b2ded 0%,#17234477 55%,transparent)}
 #sobre .knowledge-card__number{color:#fff;z-index:1;text-shadow:0 1px 4px #000}
 #sobre .knowledge-card__icon{font-size:20px;margin-bottom:8px}
-#sobre .knowledge-card strong{font-size:23px;line-height:1.15;margin-bottom:7px}
+#sobre .knowledge-card strong{font-size:20px;line-height:1.15;margin-bottom:7px}
 #sobre .knowledge-card small{font-size:12px;line-height:1.4;color:#f4f0e9}
 #sobre .knowledge-card:focus-visible{outline:2px solid #fff;outline-offset:-6px}
 #sobre .knowledge-heading-row{margin-bottom:12px}
 #sobre .knowledge-drag-hint{color:#c3c9d7;font-size:9px}
 @media(hover:hover) and (pointer:fine){#sobre .knowledge-card:hover{border-color:#ffcf8c}}
-@media(max-width:900px){#sobre .knowledge-carousel-wrap{width:74%}#sobre .river-track .knowledge-card{flex-basis:280px;height:205px}}
+@media(max-width:900px){#sobre .knowledge-carousel-wrap{width:74%}#sobre .river-track .knowledge-card{flex-basis:250px;height:180px}}
 @media(max-width:600px){#sobre .knowledge-frame{min-height:870px}#sobre .knowledge-carousel-wrap{width:auto;padding-left:19px;padding-right:0}#sobre .river-track .knowledge-card{flex-basis:72vw;height:200px;min-height:200px}#sobre .knowledge-heading-row{flex-wrap:wrap;gap:8px}#sobre .knowledge-heading-row>p{font-size:10px}#sobre .knowledge-card strong{font-size:22px}#sobre .knowledge-drag-hint{font-size:8px}}
