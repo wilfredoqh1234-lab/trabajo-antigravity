@@ -9,7 +9,7 @@
 .river-track{display:flex;gap:10px;width:max-content;will-change:transform}
 .river-track .knowledge-card{flex:0 0 clamp(175px,18vw,228px);backdrop-filter:none;transform:none!important}
 .knowledge-heading-row{gap:10px}.river-pause{background:transparent;border:1px solid #ffffff40;color:#f4dbb9;border-radius:20px;padding:6px 10px;font-size:10px;cursor:pointer}
-#programas{background:radial-gradient(ellipse at 50% 45%,#233d42,#101b30 64%,#091321);overflow:hidden;position:relative;color:#fff;padding:65px 0}
+#programas{background:radial-gradient(ellipse at 50% 45%,#233d42,#101b30 64%,#091321);overflow:hidden;position:relative;color:#fff;padding:65px 0;scroll-margin-top:80px}
 #programas .section-header{max-width:none;text-align:center;margin-bottom:14px}
 #programas .section-eyebrow{color:#e1b778}#programas .section-title{font-family:Georgia,serif;font-weight:400;letter-spacing:-.035em}
 .programs-grid.course-stage{display:block;position:relative;height:490px;perspective:1300px;touch-action:pan-y;cursor:grab;isolation:isolate}
@@ -29,11 +29,11 @@
 .course-controls button{border:1px solid #f8ddac55;background:#ffffff08;color:#fff;border-radius:50%;width:46px;height:46px;font-size:24px;cursor:pointer}
 .course-count{font-size:12px;letter-spacing:.25em;color:#e2c8a2}.course-caption{text-align:center;font-size:11px;color:#bac4cb;margin:15px 0 0}
 @media(hover:hover) and (pointer:fine){.course-controls button:hover{background:#b46539}.river-track .knowledge-card:hover{border-color:#efc480}}
-@media(max-width:700px){.programs-grid.course-stage{height:475px}.course-stage .program-card{width:min(76vw,310px);height:435px;padding:25px}.river-track .knowledge-card{flex-basis:66vw}.knowledge-section{padding-top:18px}.hero__title{font-size:13vw}.hero__title-line:after{height:3px;margin-top:8px}}
+@media(max-width:700px){.programs-grid.course-stage{height:475px}.course-stage .program-card{width:min(76vw,310px);height:435px;padding:25px}.river-track .knowledge-card{flex-basis:66vw}.knowledge-section{padding-top:18px}.hero__title{font-size:min(13vw,17vh)}.hero__title-line:after{height:3px;margin-top:8px}}
 @media(prefers-reduced-motion:reduce){.river-track{will-change:auto}.course-stage .program-card{transition:opacity 150ms ease}.knowledge-frame{animation:none!important}}
 
 /* Rector portrait presentation — scoped to this section. */
-#director{background:#e7e7e2;padding:85px 0 65px;color:#202426}
+#director{background:#e7e7e2;padding:85px 0 65px;color:#202426;scroll-margin-top:80px}
 #director .rector-panel{position:relative;isolation:isolate;min-height:560px;border-radius:30px;background:linear-gradient(110deg,#f0f0ed 0%,#e5e6e3 53%,#c5cbc8 100%);overflow:hidden}
 #director .rector-intro{position:relative;z-index:2;width:55%;padding:65px 0 65px 55px}
 #director .director-label{font-size:10px;letter-spacing:.2em;color:#666f66;margin-bottom:23px}
@@ -74,4 +74,4 @@
 #sobre .knowledge-drag-hint{color:#c3c9d7;font-size:9px}
 @media(hover:hover) and (pointer:fine){#sobre .knowledge-card:hover{border-color:#ffcf8c}}
 @media(max-width:900px){#sobre .knowledge-carousel-wrap{width:74%}#sobre .river-track .knowledge-card{flex-basis:280px;height:205px}}
-@media(max-width:600px){#sobre .knowledge-frame{min-height:870px}#sobre .knowledge-carousel-wrap{width:auto;left:19px;right:0;bottom:3%}#sobre .river-track .knowledge-card{flex-basis:72vw;height:200px;min-height:200px}#sobre .knowledge-heading-row{flex-wrap:wrap;gap:8px}#sobre .knowledge-heading-row>p{font-size:10px}#sobre .knowledge-card strong{font-size:22px}#sobre .knowledge-drag-hint{font-size:8px}}
+@media(max-width:600px){#sobre .knowledge-frame{min-height:870px}#sobre .knowledge-carousel-wrap{width:auto;padding-left:19px;padding-right:0}#sobre .river-track .knowledge-card{flex-basis:72vw;height:200px;min-height:200px}#sobre .knowledge-heading-row{flex-wrap:wrap;gap:8px}#sobre .knowledge-heading-row>p{font-size:10px}#sobre .knowledge-card strong{font-size:22px}#sobre .knowledge-drag-hint{font-size:8px}}
