@@ -1,0 +1,42 @@
+/* Isolated culture presentation. Motion promotes one thumbnail into the backdrop. */
+#cultura.culture-journey{position:relative;isolation:isolate;overflow:hidden;background:#17221c;color:#fff8eb;min-height:740px;height:min(820px,90svh);padding:0;scroll-margin-top:70px;--culture-motion:cubic-bezier(.77,0,.175,1)}
+#cultura .culture-scenes,#cultura .culture-scene,#cultura .culture-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#cultura .culture-scenes{z-index:-3;overflow:hidden}#cultura .culture-scene{object-fit:cover;object-position:center 43%}
+#cultura .culture-shade{z-index:-1;background:linear-gradient(90deg,rgba(7,18,16,.87) 0%,rgba(7,18,16,.6) 34%,rgba(7,18,16,.12) 72%),linear-gradient(0deg,rgba(7,18,16,.76),transparent 65%)}
+#cultura .culture-top{position:absolute;top:36px;left:5%;right:5%;display:flex;justify-content:space-between;gap:20px;font-size:10px;font-weight:600;letter-spacing:.23em;color:#f2d7a0;border-top:1px solid #ffffff30;padding-top:19px}
+#cultura .culture-top p{margin:0}#cultura .culture-top>span{color:#e6e6d8;font-size:9px}
+#cultura .culture-editorial{position:absolute;left:6%;top:25%;width:32%;max-width:475px;z-index:3}
+#cultura .culture-overline{font-size:11px;letter-spacing:.13em;color:#dddacb;line-height:1.6;max-width:260px;margin:0 0 30px}
+#cultura .culture-topic{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#eec778;margin:0 0 15px}
+#cultura h2{color:#fff8eb;font-family:'Outfit',sans-serif;font-size:clamp(44px,4.3vw,76px);line-height:.99;letter-spacing:-.055em;font-weight:700;max-width:430px;text-transform:uppercase;margin:0 0 22px;text-wrap:balance}
+#cultura .culture-longtitle{font-size:16px;font-weight:500;line-height:1.35;color:#fff8eb;margin:0 0 12px}
+#cultura .culture-description{font-size:14px;color:#e1e4d9;line-height:1.7;margin:0 0 25px;max-width:375px}
+#cultura .culture-explore{display:inline-flex;align-items:center;gap:35px;border:1px solid #fff8eb70;border-radius:40px;padding:12px 20px;font-size:10px;letter-spacing:.12em;color:#fff8eb;text-decoration:none;transition:background 160ms ease}
+#cultura .culture-explore span{font-size:21px;line-height:1}
+#cultura .culture-gallery{position:absolute;left:43%;right:0;bottom:64px;touch-action:pan-y;outline-offset:-3px}
+#cultura .culture-rail{height:320px;position:relative;cursor:grab}
+#cultura .culture-rail:active{cursor:grabbing}
+#cultura .culture-tile{position:absolute;left:0;top:0;width:180px;height:300px;border:1px solid #ffffff40;border-radius:13px;padding:0;overflow:hidden;text-align:left;background:#263a2b;box-shadow:0 15px 35px #0004;color:white;cursor:pointer;transition:transform 800ms var(--culture-motion),opacity 350ms ease;isolation:isolate}
+#cultura .culture-tile img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;pointer-events:none}
+#cultura .culture-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,#07120fdb 100%);z-index:0;pointer-events:none}
+#cultura .culture-tile-copy{position:absolute;left:18px;right:15px;bottom:22px;z-index:1;pointer-events:none}
+#cultura .culture-tile small{display:block;font-size:8px;letter-spacing:.12em;color:#f6e0b7;margin-bottom:10px}
+#cultura .culture-tile strong{display:block;font-size:25px;font-weight:600;line-height:1.02;text-transform:uppercase;letter-spacing:-.035em}
+#cultura .culture-tile[aria-pressed=true]{border-color:#edc16f}
+#cultura .culture-navigation{display:flex;align-items:center;gap:10px;margin:18px 6vw 0 0}
+#cultura .culture-navigation button{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border:1px solid #ffffff70;background:#13281e25;color:#fff8eb;border-radius:50%;font-size:20px;cursor:pointer;transition:background 160ms ease}
+#cultura .culture-navigation .culture-pause{font-size:13px;flex-basis:34px;width:34px;height:34px;margin-left:4px}
+#cultura .culture-progress{height:2px;flex:1;background:#ffffff40;margin:0 12px;overflow:hidden}
+#cultura .culture-progress span{display:block;width:100%;height:100%;background:#efc16c;transform-origin:left;transform:scaleX(.25);transition:transform 800ms var(--culture-motion)}
+#cultura .culture-counter{white-space:nowrap}#cultura .culture-counter strong{font-size:31px;font-weight:500}#cultura .culture-counter small{color:#ddd3bd;font-size:11px}
+#cultura .culture-hint{font-size:8px;letter-spacing:.22em;color:#e0e1d2;margin:15px 0 0}
+#cultura :focus-visible{outline:2px solid #f9cf81;outline-offset:4px}
+#cultura .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(hover:hover) and (pointer:fine){#cultura .culture-navigation button:hover,#cultura .culture-explore:hover{background:#d99136aa}#cultura .culture-tile:hover{border-color:#ffdb95}}
+@media(min-width:1500px){#cultura .culture-tile{width:210px;height:330px}#cultura .culture-rail{height:350px}}
+@media(max-width:900px){#cultura.culture-journey{height:930px;min-height:930px}#cultura .culture-editorial{top:135px;left:7%;width:85%;max-width:580px}#cultura h2{max-width:520px;font-size:55px}#cultura .culture-overline{margin-bottom:20px;max-width:none}#cultura .culture-description{max-width:520px}#cultura .culture-gallery{left:7%;bottom:30px}#cultura .culture-tile{width:160px;height:245px}#cultura .culture-rail{height:250px}#cultura .culture-top>span{display:none}#cultura .culture-shade{background:linear-gradient(90deg,#071210b8,#07121044),linear-gradient(0deg,#071210c9,transparent)} }
+@media(max-width:480px){#cultura.culture-journey{height:925px;min-height:925px}#cultura .culture-editorial{top:112px}#cultura h2{font-size:43px;max-width:340px}#cultura .culture-description{font-size:13px}#cultura .culture-longtitle{font-size:15px}#cultura .culture-overline{font-size:10px;max-width:280px}#cultura .culture-tile{width:146px;height:228px}#cultura .culture-tile strong{font-size:23px}#cultura .culture-navigation{gap:7px}#cultura .culture-progress{margin:0 5px}}
+@media(prefers-reduced-motion:reduce){#cultura .culture-tile{transition:opacity 150ms ease}#cultura .culture-progress span{transition:none}}
+#cultura .culture-tile strong{font-size:clamp(18px,1.5vw,25px);overflow-wrap:anywhere;hyphens:auto}
+@media(max-width:900px){#cultura .culture-tile strong{font-size:20px}}
+@media(max-width:480px){#cultura .culture-tile strong{font-size:18px}}

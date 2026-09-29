@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#162018">
+  <meta name="description" content="Pluriversidad — Universidad intercultural conectada con las culturas, saberes, comunidades, naturaleza y diversas formas de aprender.">
+  <title>Pluriversidad — Universidad Intercultural</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="experience.css">
+  <link rel="stylesheet" href="culture.css">
+</head>
+<body>
+
+  <!-- SITE NAVIGATION -->
+  <header class="site-header" id="site-top" role="banner">
+    <div class="header-inner">
+
+      <a class="brand" href="#inicio" aria-label="Pluriversidad — ir al inicio">
+        <img src="assets/chakana.svg" alt="" width="34" height="34" aria-hidden="true">
+        <span class="brand-text">
+          <strong class="brand-name">PLURIVERSIDAD</strong>
+          <small class="brand-tagline">CULTURA · SABERES · COMUNIDADES</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul role="list">
+          <li><a href="#inicio" class="nav-link" data-section="inicio">Inicio</a></li>
+          <li><a href="#sobre" class="nav-link" data-section="sobre">Acerca de</a></li>
+          <li><a href="#programas" class="nav-link" data-section="programas">Programas</a></li>
+          <li><a href="#cultura" class="nav-link" data-section="cultura">Cultura</a></li>
+          <li><a href="#director" class="nav-link" data-section="director">Rectoría</a></li>
+          <li><a href="#contacto" class="nav-link nav-link--cta" data-section="contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger" aria-hidden="true"></span>
+        <span class="burger" aria-hidden="true"></span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+    </div>
+
+    <nav class="mobile-nav" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Acerca de</a></li>
+        <li><a href="#programas" class="mobile-nav-link">Programas Académicos</a></li>
+        <li><a href="#cultura" class="mobile-nav-link">Cultura y Comunidad</a></li>
+        <li><a href="#director" class="mobile-nav-link">Rectoría</a></li>
+        <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Bienvenida a Pluriversidad">
+    <img class="hero__bg" id="heroBg" src="assets/andean-background.png" alt="Paisaje andino — montañas y cielo de los Andes" loading="eager">
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <img src="assets/chakana.svg" alt="" width="18" height="18" aria-hidden="true">
+        Universidad Intercultural
+      </p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line">PLURI</span><span class="hero__title-line hero__title-accent">VERSIDAD</span>
+      </h1>
+
+      <p class="hero__description">
+        Un espacio de aprendizaje vivo donde la cultura, los saberes ancestrales,<br class="desktop-br"> las comunidades y la naturaleza se encuentran para construir conocimiento juntos.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#programas" class="btn btn--primary" id="heroCTA">
+          Explorar programas
+          <img src="assets/arrow.svg" alt="" aria-hidden="true">
+        </a>
+        <a href="#sobre" class="btn btn--ghost">Conoce la universidad</a>
+      </div>
+
+      <div class="hero__stats" aria-label="Cifras de Pluriversidad">
+        <div class="stat">
+          <span class="stat__number">12+</span>
+          <span class="stat__label">Programas académicos</span>
+        </div>
+        <div class="stat-div" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__number">30+</span>
+          <span class="stat__label">Comunidades aliadas</span>
+        </div>
+        <div class="stat-div" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__number">8</span>
+          <span class="stat__label">Regiones culturales</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Explorar</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <p class="hero__vertical" aria-hidden="true">PLURIVERSIDAD</p>
+  </section>
+
+  <!-- PÁGINA 2 / SABERES VIVOS -->
+  <section class="knowledge-section" id="sobre" aria-labelledby="sobre-heading">
+    <div class="knowledge-frame">
+      <div class="knowledge-backdrop" aria-hidden="true"></div>
+      <img class="knowledge-art" src="assets/saberes-ancestrales.jpg" alt="Ilustración ancestral sobre la memoria, el territorio y la comunidad" loading="lazy" decoding="async">
+      <div class="knowledge-shade" aria-hidden="true"></div>
+
+      <div class="knowledge-topline">
+        <p><img src="assets/chakana.svg" alt="" width="16" height="16" aria-hidden="true"> Pluriversidad · saberes vivos</p>
+        <p class="knowledge-count"><strong id="knowledgeCurrent">01</strong> / 04</p>
+      </div>
+
+      <div class="knowledge-copy">
+        <p class="knowledge-kicker">Aprender desde muchas miradas</p>
+        <h2 id="sobre-heading">Memoria que<br>abre caminos</h2>
+        <p id="knowledgeDescription">Los saberes ancestrales dialogan con la universidad para comprender el presente y cuidar lo que viene.</p>
+        <a class="knowledge-link" href="#programas">Explorar programas <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="knowledge-carousel-wrap">
+        <div class="knowledge-heading-row">
+          <p>Cuatro rutas del conocimiento</p>
+          <div class="knowledge-controls" aria-label="Mover las tarjetas">
+            <button type="button" id="knowledgePrev" aria-label="Tarjeta anterior">‹</button>
+            <button type="button" id="knowledgeNext" aria-label="Tarjeta siguiente">›</button>
+          </div>
+        </div>
+        <div class="knowledge-carousel" id="knowledgeCarousel" role="list" aria-label="Temáticas de Pluriversidad">
+          <button class="knowledge-card is-active" type="button" role="listitem" data-knowledge data-index="01" data-title="Memoria que|abre caminos" data-copy="Los saberes ancestrales dialogan con la universidad para comprender el presente y cuidar lo que viene." aria-pressed="true">
+            <img class="knowledge-card__photo" src="assets/ruta-memoria.webp" alt="Quipu andino de cuerdas anudadas" loading="lazy" decoding="async" draggable="false">
+            <span class="knowledge-card__number">01</span><span class="knowledge-card__icon" aria-hidden="true">✦</span><strong>Memoria</strong><small>Historias y saberes vivos</small>
+          </button>
+          <button class="knowledge-card" type="button" role="listitem" data-knowledge data-index="02" data-title="El territorio|también enseña" data-copy="La naturaleza es un aula viva: sus ciclos orientan nuevas formas de investigar, aprender y actuar." aria-pressed="false">
+            <img class="knowledge-card__photo" src="assets/ruta-territorio.webp" alt="Laguna Humantay y montañas andinas" loading="lazy" decoding="async" draggable="false">
+            <span class="knowledge-card__number">02</span><span class="knowledge-card__icon" aria-hidden="true">⌁</span><strong>Territorio</strong><small>Naturaleza como maestra</small>
+          </button>
+          <button class="knowledge-card" type="button" role="listitem" data-knowledge data-index="03" data-title="Conocimiento|en comunidad" data-copy="Aprendemos escuchando y creando con comunidades, lenguas y experiencias que amplían lo que sabemos." aria-pressed="false">
+            <img class="knowledge-card__photo" src="assets/ruta-comunidad.webp" alt="Trabajo comunitario de la minka en Huancavelica" loading="lazy" decoding="async" draggable="false">
+            <span class="knowledge-card__number">03</span><span class="knowledge-card__icon" aria-hidden="true">◉</span><strong>Comunidad</strong><small>Aprendizaje compartido</small>
+          </button>
+          <button class="knowledge-card" type="button" role="listitem" data-knowledge data-index="04" data-title="Futuros|plurales" data-copy="Unimos pensamiento académico y creatividad colectiva para responder a los desafíos de nuestro tiempo." aria-pressed="false">
+            <img class="knowledge-card__photo" src="assets/ruta-innovacion.webp" alt="Investigación y aprendizaje en cultivos hidropónicos" loading="lazy" decoding="async" draggable="false">
+            <span class="knowledge-card__number">04</span><span class="knowledge-card__icon" aria-hidden="true">↗</span><strong>Innovación</strong><small>Transformación con identidad</small>
+          </button>
+        </div>
+        <p class="knowledge-drag-hint">Haz clic en una imagen para descubrir su temática</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS -->
+  <section class="section section--dark" id="programas" aria-labelledby="programas-heading">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow section-eyebrow--light">
+          <img src="assets/chakana.svg" alt="" width="14" height="14" aria-hidden="true">
+          Oferta académica
+        </p>
+        <h2 class="section-title section-title--light" id="programas-heading">Programas académicos</h2>
+        <p class="section-subtitle section-subtitle--light">Formación universitaria en diálogo con el mundo desde múltiples perspectivas.</p>
+      </div>
+
+      <div class="programs-grid">
+        <article class="program-card" tabindex="0">
+          <div class="program-card__badge">Pregrado</div>
+          <div class="program-card__icon" aria-hidden="true">🌍</div>
+          <h3 class="program-card__title">Etnoeducación y Pedagogía Intercultural</h3>
+          <p class="program-card__text">Forma educadores capaces de construir puentes entre sistemas de conocimiento y contextos culturales diversos.</p>
+          <a href="#contacto" class="program-card__link">Más información <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="program-card" tabindex="0">
+          <div class="program-card__badge">Pregrado</div>
+          <div class="program-card__icon" aria-hidden="true">🌱</div>
+          <h3 class="program-card__title">Gestión Territorial y Ambiente</h3>
+          <p class="program-card__text">Integra ecología, derecho territorial y cosmovisiones andinas para la defensa y gestión del territorio.</p>
+          <a href="#contacto" class="program-card__link">Más información <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="program-card" tabindex="0">
+          <div class="program-card__badge">Pregrado</div>
+          <div class="program-card__icon" aria-hidden="true">🗣️</div>
+          <h3 class="program-card__title">Lenguas, Comunicación y Narrativa</h3>
+          <p class="program-card__text">Estudia las lenguas originarias, los medios comunitarios y las narrativas como expresión política y cultural.</p>
+          <a href="#contacto" class="program-card__link">Más información <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="program-card" tabindex="0">
+          <div class="program-card__badge">Posgrado</div>
+          <div class="program-card__icon" aria-hidden="true">📚</div>
+          <h3 class="program-card__title">Maestría en Saberes Interculturales</h3>
+          <p class="program-card__text">Profundiza en epistemologías del sur, pensamiento decolonial y diálogo intercientífico.</p>
+          <a href="#contacto" class="program-card__link">Más información <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="program-card" tabindex="0">
+          <div class="program-card__badge">Pregrado</div>
+          <div class="program-card__icon" aria-hidden="true">🎭</div>
+          <h3 class="program-card__title">Artes y Patrimonio Cultural</h3>
+          <p class="program-card__text">Explora las expresiones artísticas como vehículo de memoria, identidad y transformación social.</p>
+          <a href="#contacto" class="program-card__link">Más información <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="program-card program-card--cta" tabindex="0">
+          <div class="program-card__chakana">
+            <img src="assets/chakana.svg" alt="" width="44" height="44" aria-hidden="true">
+          </div>
+          <h3 class="program-card__title">¿No encuentras tu programa?</h3>
+          <p class="program-card__text">Contáctanos y te orientamos sobre la oferta completa de Pluriversidad y sus extensiones comunitarias.</p>
+          <a href="#contacto" class="btn btn--primary btn--sm">Consultar <img src="assets/arrow.svg" alt="" aria-hidden="true"></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURA Y COMUNIDAD: four-image expanding-card carousel -->
+  <section class="culture-journey" id="cultura" aria-labelledby="cultura-heading" aria-roledescription="carrusel">
+    <div class="culture-scenes" aria-hidden="true">
+      <img class="culture-scene" src="assets/cultura-saberes.webp" alt="" loading="lazy" decoding="async" data-scene="0" style="opacity:1">
+      <img class="culture-scene" src="assets/cultura-lenguas.webp" alt="" loading="lazy" decoding="async" data-scene="1" style="opacity:0">
+      <img class="culture-scene" src="assets/cultura-arte.webp" alt="" loading="lazy" decoding="async" data-scene="2" style="opacity:0">
+      <img class="culture-scene" src="assets/cultura-investigacion.webp" alt="" loading="lazy" decoding="async" data-scene="3" style="opacity:0">
+    </div>
+    <div class="culture-shade" aria-hidden="true"></div>
+    <div class="culture-top"><p>◈ &nbsp; CULTURA Y COMUNIDAD</p><span>CUATRO FORMAS DE ENCONTRARNOS</span></div>
+    <div class="culture-editorial">
+      <p class="culture-overline">La vida universitaria como territorio vivo</p>
+      <div class="culture-copy">
+        <p class="culture-topic">Saberes ancestrales</p>
+        <h2 id="cultura-heading">El saber se comparte</h2>
+        <h3 class="culture-longtitle">Semilleros de conocimiento comunitario</h3>
+        <p class="culture-description">Espacios de encuentro con mayores, curanderos, artesanos y guardianes de tradición que comparten sus saberes dentro de la universidad.</p>
+        <a href="#contacto" class="culture-explore">CONOCER MÁS <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="culture-gallery" tabindex="0" aria-label="Explorar cuatro temáticas; usa las flechas o arrastra">
+      <div class="culture-rail">
+        <button class="culture-tile" type="button" data-slide="0" data-title="Semilleros de conocimiento comunitario" data-short="El saber se comparte" data-description="Espacios de encuentro con mayores, curanderos, artesanos y guardianes de tradición que comparten sus saberes dentro de la universidad." data-topic="Saberes ancestrales" aria-label="Ver Saberes ancestrales" aria-pressed="true">
+          <img src="assets/cultura-saberes.webp" alt="Tejedora andina trabajando en un telar tradicional" loading="lazy" decoding="async" draggable="false">
+          <span class="culture-tile-copy"><small>01 / PLURIVERSIDAD</small><strong>Saberes ancestrales</strong></span>
+        </button>
+        <button class="culture-tile" type="button" data-slide="1" data-title="Talleres de idiomas originarios" data-short="Cada lengua, un mundo" data-description="Quechua, Aymara, Mapudungún y otras lenguas como herramientas de pensamiento y conexión con el territorio." data-topic="Lenguas vivas" aria-label="Ver Lenguas vivas" aria-pressed="false">
+          <img src="assets/cultura-lenguas.webp" alt="Docente y estudiantes en una clase de quechua en Apurímac" loading="lazy" decoding="async" draggable="false">
+          <span class="culture-tile-copy"><small>02 / PLURIVERSIDAD</small><strong>Lenguas vivas</strong></span>
+        </button>
+        <button class="culture-tile" type="button" data-slide="2" data-title="Festivales y expresión cultural" data-short="La memoria celebra" data-description="Encuentros anuales que celebran la música, la danza, la gastronomía y el arte de los pueblos aliados de Pluriversidad." data-topic="Arte y memoria" aria-label="Ver Arte y memoria" aria-pressed="false">
+          <img src="assets/cultura-arte.webp" alt="Danza tradicional en una plaza de Cusco" loading="lazy" decoding="async" draggable="false">
+          <span class="culture-tile-copy"><small>03 / PLURIVERSIDAD</small><strong>Arte y memoria</strong></span>
+        </button>
+        <button class="culture-tile" type="button" data-slide="3" data-title="Centro de estudios interculturales" data-short="El territorio enseña" data-description="Investigación participativa con comunidades para producir conocimiento situado y comprometido con el buen vivir." data-topic="Investigación" aria-label="Ver Investigación" aria-pressed="false">
+          <img src="assets/cultura-investigacion.webp" alt="Terrazas circulares andinas de Moray" loading="lazy" decoding="async" draggable="false">
+          <span class="culture-tile-copy"><small>04 / PLURIVERSIDAD</small><strong>Investigación</strong></span>
+        </button>
+      </div>
+      <div class="culture-navigation">
+        <button type="button" class="culture-prev" aria-label="Temática anterior">←</button>
+        <button type="button" class="culture-next" aria-label="Temática siguiente">→</button>
+        <button type="button" class="culture-pause" aria-label="Pausar reproducción automática" aria-pressed="false">Ⅱ</button>
+        <div class="culture-progress" aria-hidden="true"><span></span></div>
+        <span class="culture-counter"><strong>01</strong><small> / 04</small></span>
+      </div>
+      <p class="culture-hint">ARRASTRA PARA DESCUBRIR</p>
+    </div>
+    <p class="culture-status sr-only" aria-live="polite" aria-atomic="true"></p>
+  </section>
+
+  <!-- RECTOR / DIRECTOR -->
+  <section class="section section--warm" id="director" aria-labelledby="director-heading">
+ <div class="container">
+  <div class="rector-panel">
+   <div class="rector-intro">
+    <p class="director-label">RECTORÍA · PLURIVERSIDAD</p>
+    <h2 id="director-heading">Wilfredo<br>Quispe Huayhua</h2>
+    <p class="rector-subtitle">Una universidad que aprende<br><em>tanto como enseña.</em></p>
+    <p class="director-position">Doctor en Educación Intercultural<br>Rector Fundador de Pluriversidad</p>
+    <div class="rector-actions"><a href="#contacto" class="btn btn--primary">Contactar rectoría ↗</a><a href="#rector-trayectoria" class="rector-read">Conocer su trayectoria ↓</a></div>
+   </div>
+   <img class="rector-cutout" src="assets/wilfredo-quispe-huayhua.png" alt="Wilfredo Quispe Huayhua, rector de Pluriversidad" width="1254" height="1254" loading="lazy" decoding="async">
+   <a class="rector-note" href="#rector-trayectoria"><small>Conocimiento en diálogo</small><strong>Cultura, saberes<br>y comunidad</strong><span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="rector-details" id="rector-trayectoria"><div><p class="director-label">TRAYECTORIA Y COMPROMISO</p><p class="director-bio">El Dr. Quispe Huayhua es educador, investigador y defensor de los derechos epistémicos de los pueblos indígenas y campesinos. Con más de veinte años de trayectoria en pedagogía intercultural, lideró la fundación de Pluriversidad como un espacio universitario donde la diversidad cultural no es un complemento, sino el centro del proyecto educativo.</p><div class="director-credentials" aria-label="Credenciales académicas">
+            <div class="credential">
+              <span class="credential__icon" aria-hidden="true">🎓</span>
+              <span class="credential__text">Doctor en Educación Intercultural</span>
+            </div>
+            <div class="credential">
+              <span class="credential__icon" aria-hidden="true">📜</span>
+              <span class="credential__text">Investigador en Epistemologías del Sur</span>
+            </div>
+            <div class="credential">
+              <span class="credential__icon" aria-hidden="true">🌐</span>
+              <span class="credential__text">Consultor UNESCO en Educación Indígena</span>
+            </div>
+          </div></div><blockquote class="director-quote">
+            <p>"Pluriversidad nació de la escucha. Escuchar a las comunidades que durante siglos han guardado saberes que el mundo académico tardó demasiado en reconocer. Aquí construimos una universidad que aprende tanto como enseña."</p>
+          </blockquote></div>
+ </div>
+ </section>
+
+  <!-- CONTACTO -->
+  <section class="section section--dark" id="contacto" aria-labelledby="contacto-heading">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow section-eyebrow--light">
+          <img src="assets/chakana.svg" alt="" width="14" height="14" aria-hidden="true">
+          Contacto
+        </p>
+        <h2 class="section-title section-title--light" id="contacto-heading">Únete a Pluriversidad</h2>
+        <p class="section-subtitle section-subtitle--light">Escríbenos, visítanos o cuéntanos tu historia. Somos una universidad que escucha.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-block">
+            <span class="contact-block__icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Sede principal</strong>
+              <p>Av. del Conocimiento 1420<br>Región Andina, América del Sur</p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-block__icon" aria-hidden="true">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p><a href="tel:+51000000000">+51 (000) 000-0000</a></p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-block__icon" aria-hidden="true">✉️</span>
+            <div>
+              <strong>Correo electrónico</strong>
+              <p><a href="mailto:info@pluriversidad.edu">info@pluriversidad.edu</a></p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-block__icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Atención</strong>
+              <p>Lunes a viernes · 8:00 am – 5:00 pm</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Nombre completo</label>
+              <input type="text" id="contactName" name="name" placeholder="Tu nombre" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Correo electrónico</label>
+              <input type="email" id="contactEmail" name="email" placeholder="tu@correo.com" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Asunto</label>
+            <select id="contactSubject" name="subject" required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="admisiones">Admisiones e inscripciones</option>
+              <option value="programas">Información sobre programas</option>
+              <option value="rectoria">Comunicación con rectoría</option>
+              <option value="cultura">Actividades culturales</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" name="message" placeholder="Cuéntanos cómo podemos ayudarte..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitContact">
+            Enviar mensaje
+            <img src="assets/arrow.svg" alt="" aria-hidden="true">
+          </button>
+          <p class="form-note" aria-live="polite" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand brand--light" href="#inicio" aria-label="Pluriversidad — inicio">
+            <img src="assets/chakana.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="brand-text">
+              <strong class="brand-name">PLURIVERSIDAD</strong>
+              <small class="brand-tagline">CULTURA · SABERES · COMUNIDADES</small>
+            </span>
+          </a>
+          <p class="footer-desc">Universidad intercultural comprometida con los saberes, las comunidades y la vida en todas sus formas.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Explorar sitio">
+          <h3 class="footer-nav__title">Explorar</h3>
+          <ul role="list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Acerca de</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#cultura">Cultura</a></li>
+            <li><a href="#director">Rectoría</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Programas académicos">
+          <h3 class="footer-nav__title">Programas</h3>
+          <ul role="list">
+            <li><a href="#programas">Etnoeducación</a></li>
+            <li><a href="#programas">Gestión Territorial</a></li>
+            <li><a href="#programas">Lenguas y Comunicación</a></li>
+            <li><a href="#programas">Artes y Patrimonio</a></li>
+            <li><a href="#programas">Maestría Intercultural</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h3 class="footer-nav__title">Contacto</h3>
+          <address>
+            <p>Av. del Conocimiento 1420<br>Región Andina, América del Sur</p>
+            <p><a href="mailto:info@pluriversidad.edu">info@pluriversidad.edu</a></p>
+            <p><a href="tel:+51000000000">+51 (000) 000-0000</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pluriversidad — Universidad Intercultural. Todos los derechos reservados.</p>
+        <img src="assets/chakana.svg" alt="" width="18" height="18" aria-hidden="true">
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="experience.js"></script>
+  <script src="culture.js"></script>
+</body>
+</html>
